@@ -44,7 +44,9 @@ The app uses an original grayscale transparent PNG in `assets/pet.png`, drawn fo
 
 Automated tests cover feed/play bounds, mood thresholds 29/30/70/71, hunger overflow, loss freeze, reset, strict win threshold, timer cancellation and restart using a shorter test-only duration, visible care/pause/name actions, and reduced-motion durations. `flutter analyze` reports no issues; `flutter test` passes all seven tests.
 
-On the Pixel 7 Pro emulator, I observed the 30-second tick take hunger from 50 to 55, three Play taps produce a happy green tint and 95 happiness, Pause disable care buttons, and the entire page scroll in landscape without an overflow. Screenshots: [initial portrait](docs/images/portrait-initial.png), [happy portrait](docs/images/portrait-happy.png), [paused portrait](docs/images/portrait-paused.png), [landscape top](docs/images/landscape.png), [landscape controls](docs/images/landscape-actions.png). A release install check will be added after the build.
+On the Pixel 7 Pro emulator, I observed the 30-second tick take hunger from 50 to 55, three Play taps produce a happy green tint and 95 happiness, Pause disable care buttons, and the entire page scroll in landscape without an overflow. Screenshots: [initial portrait](docs/images/portrait-initial.png), [happy portrait](docs/images/portrait-happy.png), [paused portrait](docs/images/portrait-paused.png), [landscape top](docs/images/landscape.png), [landscape controls](docs/images/landscape-actions.png).
+
+The release APK was built, installed on the same emulator, and launched. In that installed release, Play changed happiness from 50 to 65 and hunger from 50 to 60; Pause disabled Feed and Play. Evidence: [release opening screen](docs/images/release-portrait.png) and [release care check](docs/images/release-care.png). The submitted APK SHA-256 is `FA17BB2358CB9E956D0B7AD75D6DC9AE778934837BA28B55F005B23E8FCE1B10`.
 
 ## Collaboration
 
